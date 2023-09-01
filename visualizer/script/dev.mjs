@@ -1,3 +1,4 @@
+import readline from 'node:readline/promises';
 import esbuild from "esbuild";
 import { wasmLoader } from 'esbuild-plugin-wasm';
 import htmlPlugin from '@chialab/esbuild-plugin-html';
@@ -21,3 +22,10 @@ ctx.serve({
     port: 8080,
     servedir: './dist',
 })
+readline.createInterface({ input: process.stdin })
+    .on('line', line => {
+        if (line === 'exit') {
+            rl.close();
+            process.exit(1);
+        }
+    })
