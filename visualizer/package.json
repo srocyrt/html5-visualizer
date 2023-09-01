@@ -1,0 +1,23 @@
+{
+  "name": "html5-visualizer",
+  "version": "0.1.0",
+  "description": "This tool, written in Rust and WebAssembly, visualizes the process of parsing HTML5.",
+  "scripts": {
+    "dev": "node ./script/dev.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srocyrt/html5-visualizer.git"
+  },
+  "author": "SroCyrT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srocyrt/html5-visualizer/issues"
+  },
+  "homepage": "https://github.com/srocyrt/html5-visualizer#readme",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-html": "^0.17.3",
+    "esbuild": "0.19.2",
+    "esbuild-plugin-wasm": "^1.1.0"
+  }
+}
